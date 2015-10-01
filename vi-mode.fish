@@ -1,3 +1,10 @@
+# SYNOPSIS
+#   vi-mode [options]
+#
+#
+
+function init -a path --on-event init_vi-mode
+
 set_color normal
 
 # vi:noexpandtab:sw=4:ts=4
@@ -303,6 +310,7 @@ end
 
 function fish_user_key_bindings
   eval $vi_mode_default
+end
 end
 
 # vi:noexpandtab:sw=4:ts=4
